@@ -1,65 +1,63 @@
+# Airbnb Clone – Search and Filter Prototype
 
-# Airbnb 🛅
+🏡 A mini-clone of Airbnb’s search and filter experience, built using **HTML**, **CSS**, and **JavaScript**.
 
-## Contents
-- Introduction
-- Starter Code
-- Deliverable
-- LevelUp! (Extra Credit)
-- Extra Help (If Needed)
+---
 
-## Introduction
+## 🕹️ Live Demo
+[Visit Airbnb Clone](https://s-meher.github.io/Airbnb_Clone/)
 
-You'll be working with the Airbnb development team to prototype a new and improved search and filter experience. Other developers on the team have written code that will add search results to the webpage. Your task is to make sure the *correct search results* are being added to the page based on the search term and filtering options. 
+---
 
-The final user experience should function [like this](https://i.imgur.com/xewHeDQ.mp4).
+## 📚 Overview
+This project simulates the search and filtering experience of Airbnb.  
+Users can search for listings by city, filter by price range, and filter by type of accommodation.
 
-## Starter Code
+Built to practice working on **modular codebases**, simulating how real-world developers contribute small but important features into large projects.
 
-There is existing code in `provided.js` that will implement the search feature and show results to the user. This code is wired to call the three functions included in `script.js`. The functions you complete in `script.js` will filter the search results based on the user's query and filtering options.
+---
 
-Note that you are writing a small bit of code that fits into a larger whole. This is oftentimes how the real world works. You won't always be familiar with the majority of code in a large project. The key is to understand how your piece fits in.  
+## 🔨 Built With
+- HTML5
+- CSS3
+- JavaScript (ES6+)
 
-> **🗒 Note:** The only file you'll need to edit to complete these tasks is `script.js`.
+---
 
-## Deliverable
+## ✨ Key Features
+- **City Filter:** Search listings by city name (case-insensitive)
+- **Price Filter:** Filter listings between selected minimum and maximum price
+- **Type Filter:** (Extra Credit) Filter listings by type of accommodation (e.g., Entire Place, Private Room)
+- Interactive UI connected with pre-written backend logic (`provided.js`)
 
-Below are the two filtering functions you'll need to complete, as well as a Level Up you can try (number three)!
+---
 
-### 1. **`filterByCity(targetCity, listingCityArray)`**
+## 🚀 How It Works
+- `filterByCity(targetCity, listingCityArray)` — Returns listings matching the city name.
+- `filterByPrice(minPrice, maxPrice, listingPriceArray)` — Returns listings within the given price range.
+- `filterByTypes(targetTypes, listingTypeArray)` — Returns listings matching any selected type(s).
 
-| Parameter | Type | Example Argument |
-| ---- | ---- | ---- |
-| `targetCity` | String | `"San Diego"` |
-| `listingCityArray` | Array | `["Lake Tahoe", "San Diego", "Chicago"]` |
+The provided JavaScript (`provided.js`) handles user input and triggers these filtering functions.
 
-This function should return an array with each index from `listingCityArray` where the city matches `targetCity` **ignoring capitalization/case**.
+---
 
-<hr>
+## 📂 Project Structure
 
-### 2. **`filterByPrice(minPrice, maxPrice, listingPriceArray)`**
-   
-| Parameter | Type | Example Argument |
-| ---- | ---- | ---- |
-| `minPrice` | Number | `100` |
-| `maxPrice` | Number | `300` |
-| `listingPriceArray` | Array | `[132, 430, 73, 198]` |
+- `index.html` — Main HTML page
+- `style.css` — Custom CSS styling
+- `script.js` — Filtering logic (you wrote this!)
+- `provided.js` — Pre-written search integration code
+- `listings.js` — Array of all listing data
+- `img/` — Folder containing images for different cities (Chicago, Lake Tahoe (lt), San Diego (sd))
+- `README.md` — Project description
+- `.gitignore` — Files to exclude from GitHub
+- `.eslintrc.json` — ESLint configuration
+- `package.json` — Project metadata
+- `HINTS.md` — Extra help provided (optional)
 
-This function should return an array with each index from `listingPriceArray` where the price is between the minimum and maximum price specified by the user. 
+---
 
+## 🙌 Acknowledgements
+- Starter project structure inspired by real-world Airbnb functionality.
 
-## LevelUp! (Extra Credit)
-Feel like you want to keep going? Tackle the `filterByTypes` function to snag some extra credit:
-
-### 3. **`filterByTypes(targetTypes, listingTypeArray)`**
-
-| Parameter | Type | Example Argument |
-| ---- | ---- | ---- |
-| `targetTypes` | Array | `["entire-place", "private-room"]` |
-| `listingTypeArray` | Array | `["entire-place", "private-room", "shared-room"]` |
-
-This function should return an array with each index from `listingTypeArray` where the type of listing matches *ANY* of the `targetTypes`.
-
-
-## Extra Help (If Needed)
-You have everything you need to get started and complete this task. You should try it on your own first! Use your decomposition skills to break each task down into smaller steps and don't hesitate to practice your Google Fu. If you're still having trouble, check out `HINTS.md` for some extra help.
+---
